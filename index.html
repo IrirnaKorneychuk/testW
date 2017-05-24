@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="normalize.min.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans:400,400i" rel="stylesheet">
+	<title></title>
+</head>
+<body>
+	<script>
+		function confirmStart() {
+  if (confirm("Я получил что-то офигенное")) {
+    return true;
+  } else {
+    return false;
+  }
+}
+	</script>
+	<header>
+		<div class="container">
+			<div class="name">
+				<div class="square"></div>
+				<div class="company">
+					<h1>Название <div class="comp">компании</div></h1>
+					<p>самая клевая компания</p>
+				</div>
+			</div>
+			<div class="numbers">
+				<p>+7(499) 777-77-77</p>
+				<p class="numb2">+7(499) 777-77-77</p>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="block-form">
+			<div class="container">
+				<div class="btn-form1">
+					<h2>форма с кнопкой</h2>
+					<div class="btn-form2">
+						<h2>оставь телефон и получи что-то офигенное</h2>
+						<form action="#" method="post">
+							<input type="tel" name="phone" placeholder="Введите номер">
+						</form>
+						<button type="submit" class="btn-get" onclick="return confirmStart();">получить</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="block-content">
+			<div class="container">
+				<div class="block-slider">
+					<h2>тут у нас слайдер</h2>
+					<input type="radio" name="point" id="slide1" checked>
+					<input type="radio" name="point" id="slide2">
+					<input type="radio" name="point" id="slide3">
+					<div class="slider">
+						<div class="slides slide1"></div>
+						<div class="slides slide2"></div>
+						<div class="slides slide3"></div>
+					</div>	
+					<div class="controls">
+					<label for="slide1"></label>
+					<label for="slide2"></label>
+						<label for="slide3"></label>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="just-text">
+				<div class="container">
+					<h2>просто текстовый блок</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere quis arcu sit amet commodo. Nullam ac dui lacus. Nulla dapibus interdum interdum. Curabitur ut diam nisl. Vivamus libero lacus, viverra at dolor sit amet, commodo faucibus orci. Vivamus laoreet ornare nisi, id pharetra tellus ullamcorper volutpat. Sed lacinia placerat accumsan. Praesent pharetra ipsum scelerisque, sodales urna ut, placerat nulla. Duis nunc urna, semper non arcu ut, sagittis dapibus lorem. Nunc nec urna id velit sodales sodales. Sed porttitor quam eget mollis consequat. Curabitur aliquet nec dui eget aliquet. Nulla in risus ante.</p>
+				</div>
+		</section>
+		<section class="calculator">
+			<div class="container">
+				<h2 class="calc">калькулятор</h2>
+				<h2 class="price">(стоимость пользователь узнает по телефону)</h2>
+				<div class="wind-imgs">
+					<div class="first wind-img">
+						<p>Одностворчатое</p>
+					</div>
+					<div class="second wind-img">
+						<p>Двухстворчатое</p>
+					</div>
+					<div class="third wind-img">
+						<p>Трехстворчатое</p>
+					</div>
+					<div class="forth wind-img">
+						<p>Балконный блок</p>
+					</div>
+					<div class="fifth wind-img">
+						<p>Остекление балкона</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="calculate">
+			<div class="container">
+				<div class="section-calculate">
+					<div class="calculate-block">
+						<div class="column-1-1">
+							<p class="hor">ширина</p>
+							<p class="vert">высота</p>
+							<form class="wdth-hght">
+								<label>
+									<span>ширина, см</span>
+									<br>
+									<input type="numbers" name="wdth" placeholder="120">
+								</label>
+								<label>
+									<span>высота, см</span>
+									<br>
+									<input type="numbers" name="hght" placeholder="120">
+								</label>
+							</form>
+						</div>
+						<div class="column-1-2">
+							<h2>Одностворчатое окно КВЕ</h2>
+							<b>1. Критерий выбора</b><br><br>
+							<label>
+							    <input class="radio" type="radio" name="radio-test">
+							    <span class="radio-custom"></span>
+							    <span class="label">пункт выбора 1</span>
+							</label>
+							<label>
+							    <input class="radio" type="radio" name="radio-test">
+							    <span class="radio-custom"></span>
+							    <span class="label">пункт выбора 2</span>
+							</label>
+							<label>
+							    <input class="radio" type="radio" name="radio-test">
+							    <span class="radio-custom"></span>
+							    <span class="label">пункт выбора 3</span>
+							</label><br>
+							<div class="open">
+								<b>2. Выберите открывание створки</b><br><br>
+								<select>
+									<option>Не открывается</option>
+									<option>Открывается</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				<div class="count">
+					<form>
+						<input type="numbers" placeholder="Введите номер">
+					</form>
+					<button class="btn-count" type="submit">
+						рассчитать
+					</button>
+				</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="footer">
+			<div class="container">
+				<p>просто</p>
+				<p>скромный футер</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
